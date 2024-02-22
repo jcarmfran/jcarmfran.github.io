@@ -22,7 +22,7 @@ github_username:  jcarmfran
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jameswgrant
-linkedin_username: jcarmfran
+linkedin_username: francisco-j-carmona
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: globalmtb
@@ -50,16 +50,40 @@ about_profile_image: images/ProfilePictureSmall.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Francisco and I'm an established network engineer looking to expand my expertise into machine learning technologies.
 
-  I am most skilled in: <mark>Azure</mark>, <mark>Python</mark>, <mark>Machine Learning</mark>, and <mark>Networking</mark>
+  I am most skilled in: <mark>Azure</mark>, <mark>Python</mark>, <mark>Machine Learning</mark>, and <mark>Networking</mark>.
 
 content:
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Microsoft
+        link: Microsoft.com
+        # link_text: Microsoft.com
+        sub_title: Azure Networking Support Engineer
+        caption: August 2022 - January 2024
+        quote: >
+          Empowering our customers to do more.
+        description: | # this will include new lines to allow paragraphs
+          Provided tier 3 networking support to enterprise customers utilizing Azure services.
+      - layout: left
+        title: Metronet
+        link: Metronet.com
+        # link_text: Microsoft.com
+        sub_title: Networking Engineer
+        caption: May 2020 - July 2022
+        quote: >
+          Metronet things
+        description: | # this will include new lines to allow paragraphs
+          Helped in turning up and troubleshooting fiber internet, IP-phone, and POTS lines for business customers.
+
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
         title: Handwritten Digits Classifier
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
-        link_text: Project Website
+        link_text: HandwrittenDigitsClassifier.ipynb
         additional_links:
           - title:  jcarmfran/HandwrittenDigitsClassifier
             icon: fab fa-github
@@ -71,30 +95,36 @@ content:
           An example of a classification model where handwritten digits (digits 0 through 9) are identified. 
         description: | # this will include new lines to allow paragraphs
           Exploring the effectiveness of deep, feed-forward neural networks at classifying images of handwritten digits (digits 0 through 9). I started this project as a way of learning <mark>SciKit-Learn</mark>'s powerful classification modules.  I have learned many skills through this and been I'm very proud of having this in my portfolio.
-
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Microsoft
-        link: Microsoft.com
-        # link_text: Microsoft.com
-        sub_title: Azure Networking Support Engineer
-        caption: August 2022 - January 2024
+      - layout: top-middle
+        title: [Regression Project]
+        link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
+        link_text: [Regression].ipynb
+        additional_links:
+          - title:  jcarmfran/[Regression]
+            icon: fab fa-github
+            url: github.com/jcarmfran/DS-Portfolio/Regression/[Regression].ipynb
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          An example of a regression model where [context]. 
         description: | # this will include new lines to allow paragraphs
-            Provided tier 3 networking support to enterprise customers utilizing Azure services.
-      - layout: left
-        title: Metronet
-        link: Metronet.com
-        # link_text: Microsoft.com
-        sub_title: Networking Engineer
-        caption: May 2020 - July 2022
+          [Description of project].
+      - layout: top-middle
+        title: [Deep Learning Project]
+        link: github.com/jcarmfran/DS-Portfolio/Deep Learning/Tensorflow/[Deep Learning Project].ipynb
+        link_text: [Tensorflow].ipynb
+        additional_links:
+          - title:  jcarmfran/[Tensorflow]
+            icon: fab fa-github
+            url: github.com/jcarmfran/DS-Portfolio/Deep Learning/[Tensorflow].ipynb
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          Metronet things
+          An example of a Deep Learning model where <mark>Tensorflow</mark> is used to ... [context]. 
         description: | # this will include new lines to allow paragraphs
-            Helped in turning up and troubleshooting fiber internet, IP-phone, and POTS lines for business customers.
+          [Description of project] .
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -123,7 +153,7 @@ content:
       ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
