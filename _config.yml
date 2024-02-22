@@ -59,7 +59,7 @@ content:
       - layout: top-middle
         title: Handwritten Digits Classifier
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
-        # link_text: Project Website
+        link_text: Project Website
         additional_links:
           - title:  jcarmfran/HandwrittenDigitsClassifier
             icon: fab fa-github
