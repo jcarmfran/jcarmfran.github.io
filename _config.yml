@@ -96,9 +96,9 @@ content:
         description: | # this will include new lines to allow paragraphs
           Exploring the effectiveness of deep, feed-forward neural networks at classifying images of handwritten digits (digits 0 through 9). I started this project as a way of learning <mark>SciKit-Learn</mark>'s powerful classification modules.  I have learned many skills through this and been I'm very proud of having this in my portfolio.
       - layout: top-middle
-        title: [Regression Project]
+        title: Regression Project
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
-        link_text: [Regression].ipynb
+        link_text: Regression.ipynb
         additional_links:
           - title:  jcarmfran/[Regression]
             icon: fab fa-github
@@ -111,9 +111,9 @@ content:
         description: | # this will include new lines to allow paragraphs
           [Description of project].
       - layout: top-middle
-        title: [Deep Learning Project]
+        title: Deep Learning Project
         link: github.com/jcarmfran/DS-Portfolio/Deep Learning/Tensorflow/[Deep Learning Project].ipynb
-        link_text: [Tensorflow].ipynb
+        link_text: Tensorflow.ipynb
         additional_links:
           - title:  jcarmfran/[Tensorflow]
             icon: fab fa-github
