@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: jcarmfran/jcarmfran.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -63,14 +63,14 @@ content:
         sub_title: Azure Networking Support Engineer
         caption: August 2022 - January 2024
         quote: >
-          Empowering our customers to do more.
+          Microsoft's mission is to empower every person and every organization on the planet to achieve more.
         description: | # this will include new lines to allow paragraphs
           Provided tier 3 networking support to enterprise customers utilizing Azure services.
       - layout: left
         title: Metronet
         link: Metronet.com
-        # link_text: Microsoft.com
-        sub_title: Networking Engineer
+        # link_text: Metronet.com
+        sub_title: Network Engineer
         caption: May 2020 - July 2022
         quote: >
           Metronet things
@@ -80,6 +80,21 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: top-middle
+        title: Detecting Pneumonia with X-rays Using Machine Learning   
+        link: https://github.com/jcarmfran/Pneumonia-Detection
+        link_text: HandwrittenDigitsClassifier.ipynb
+        additional_links:
+          - title:  jcarmfran/Pneumonia-Detection 
+            icon: fab fa-github
+            url: https://github.com/jcarmfran/Pneumonia-Detection
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          An example of a classification model where handwritten digits (digits 0 through 9) are identified. 
+        description: | # this will include new lines to allow paragraphs
+          Exploring the effectiveness of deep, feed-forward neural networks at classifying images of handwritten digits (digits 0 through 9). I started this project as a way of learning <mark>SciKit-Learn</mark>'s powerful classification modules.  I have learned many skills through this and been I'm very proud of having this in my portfolio.
       - layout: top-middle
         title: Handwritten Digits Classifier
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
