@@ -83,7 +83,8 @@ content:
       - layout: top-middle
         title: Detecting Pneumonia with X-rays Using Machine Learning   
         link: https://github.com/jcarmfran/Pneumonia-Detection
-        link_text: HandwrittenDigitsClassifier.ipynb
+        link_text: >
+          NEED_LINK_TO_PNEUMONIA_DETECTION
         additional_links:
           - title:  jcarmfran/Pneumonia-Detection 
             icon: fab fa-github
