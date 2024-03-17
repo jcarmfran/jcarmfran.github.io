@@ -81,21 +81,23 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Detecting Pneumonia with X-rays Using Machine Learning   
+        title: Detecting Pneumonia with X-rays    
         link: https://github.com/jcarmfran/Pneumonia-Detection
-        link_text: >
-          NEED_LINK_TO_PNEUMONIA_DETECTION
+        link_text: NEED_LINK_TO_PNEUMONIA_DETECTION
         additional_links:
-          - title:  jcarmfran/Pneumonia-Detection 
+          - title:  jcarmfran/Pneumonia-Detection
             icon: fab fa-github
             url: https://github.com/jcarmfran/Pneumonia-Detection
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          An example of a classification model where handwritten digits (digits 0 through 9) are identified. 
+          An application trained to accurately classify whether an X-ray image indicates signs of pneumonia in a patient.
         description: | # this will include new lines to allow paragraphs
-          Exploring the effectiveness of deep, feed-forward neural networks at classifying images of handwritten digits (digits 0 through 9). I started this project as a way of learning <mark>SciKit-Learn</mark>'s powerful classification modules.  I have learned many skills through this and been I'm very proud of having this in my portfolio.
+          Adopting a more modular approach, this application was built to better explore the effectiveness of CNNs in classifying images. 
+          After some initial exploratory analysis, a pre-trained model was used to successfully predict pneumonia in <mark>PERCENTAGE</mark> patients. 
+          The full end-to-end project utilizes <mark>Tensorflow</mark>, transfer learning from [VGGs](https://keras.io/api/applications/vgg/). 
+          The application front-end was developed with <mark>Flask</mark> and deployed as a WebApp on Azure cloud. 
       - layout: top-middle
         title: Handwritten Digits Classifier
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
