@@ -92,12 +92,11 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          An application trained to accurately classify whether an X-ray image indicates signs of pneumonia in a patient.
+          With an accuracy score of over 90%, this application can help detect sings of pneumonia in a patient by chest X-rays alone.
         description: | # this will include new lines to allow paragraphs
-          Adopting a more modular approach, this application was built to better explore the effectiveness of CNNs in classifying images. 
-          After some initial exploratory analysis, a pre-trained model was used to successfully predict pneumonia in <mark>PERCENTAGE</mark> patients. 
-          The full end-to-end project utilizes <mark>Tensorflow</mark>, transfer learning from [VGGs](https://keras.io/api/applications/vgg/). 
-          The application front-end was developed with <mark>Flask</mark> and deployed as a WebApp on Azure cloud. 
+          Created to help explore the effectiveness of CNNs in classifying images, this application can accurately detect signs of pneumonia in patients (~90%). This tool could be used to quickly flag a patient, empowering medical professionals to confidently order additional screenings/tests.
+          The full end-to-end project utilizes <mark>Flask</mark> as it's front end component and was deployed as a WebApp on Azure cloud.
+          The models were trained using <mark>Tensorflow</mark> and <mark>Keras</mark> libraries. <mark>DVC</mark> and github actions act as the application's CI/CD components.  
       - layout: top-middle
         title: Handwritten Digits Classifier
         link: github.com/jcarmfran/DS-Portfolio/Neural Networks/HandwrittenDigitsClassifier.ipynb
