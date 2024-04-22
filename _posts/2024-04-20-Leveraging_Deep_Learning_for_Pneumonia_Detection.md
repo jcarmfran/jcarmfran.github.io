@@ -33,9 +33,9 @@ Splitting the dataset into training, validation, and test sets is crucial for ev
 **Exploratory Data Analysis**
 It seems nearly impossible to discern from the following images which is the patient suffering from pneumonia, and which isn't.
 
-![image one](./assets/img/xrays/xray_normal.jpg)
+![image one](./assets/img/xrays/xray_normal.png)
 
-![image one](./assets/img/xrays/xray_pneumonia.jpg)
+![image one](./assets/img/xrays/xray_pneumonia.png)
 
 **Model Training and Evaluation** 
 
