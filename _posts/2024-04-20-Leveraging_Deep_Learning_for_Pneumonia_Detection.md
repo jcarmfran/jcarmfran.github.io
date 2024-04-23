@@ -19,9 +19,17 @@ The three models will be a simple Convolution Neural Network, VGG16, and ResNet5
 Relevant resources
 [Keras Applications](https://keras.io/api/applications/#usage-examples-for-image-classification-models) 
 
-1. **The Simple CNN Model**: The first model was a straightforward Convolutional Neural Network (CNN), designed to learn patterns directly from the chest X-ray images. It consisted of convolutional layers that could capture the intricate patterns in X-ray images, which are indicative of pneumonia. 
+1. **The CNN Model**: The first model was a somewhat complex Convolutional Neural Network (CNN), designed to learn patterns directly from the chest X-ray images. It consisted of convolutional layers that could capture the intricate patterns in X-ray images, which are indicative of pneumonia. 
 
-2. **VGG16**
+    The implementation begins with data augmentation layers that introduce variability into the training dataset, enhancing the model's ability to generalize from the data. At random, a set number of images will either be [zoomed in/out](https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomZoom) or [rotated](https://www.tensorflow.org/api_docs/python/tf/keras/layers/RandomRotation).
+
+    Subsequent convolutional layers (`layers.Conv2d`), designed with a stride of two, reduce dimensionality while capturing spatial hierarchies. 
+    
+    Pooling layers further condense the feature maps, leading to a flattened layer that transitions to a series of dense layers. These dense layers culminate in a binary classification output. The model employs dropout regularization to mitigate overfitting and an early stopping callback to prevent unnecessary computations if the validation loss does not improve, ensuring efficient training. The optimizer and loss function are carefully chosen to steer the learning process.
+
+    Though the model is not able to achieve accuracies scores north of 74.4% and 76.3% for training and validation datasets, respectively, those are comparably much better results than what we would expect by simple random chance.
+
+2. **VGG16**: The model was pre-trained on ImageNet and fine-tuned with additional layers and augmentation techniques similar to the CNN implementation as before. Notably, at just 10 epochs, we were able to achieve training and validation accuracies that both peaked at just over 94.0%! This model's robustness shows great potential for early detection of pneumonia in clinical settings. These results suggest that VGG16, with appropriate modifications, can be a valuable tool in medical imaging analysis.
 
 3. **The Transfer Learning Model with ResNet50v2**: The second model leverages the power of transfer learning, a technique where a pre-trained model is fine-tuned to a specific task. TensorFlow offers many pretrained models, but ResNet50v2 was chosen thanks to its renowned performance in image recognition tasks. This approach allowed to leverage the model's pre-trained weights, which had been learned from a vast array of images, and adapt them to the specific task of pneumonia detection. 
 
@@ -33,9 +41,7 @@ Splitting the dataset into training, validation, and test sets is crucial for ev
 **Exploratory Data Analysis**
 It seems nearly impossible to discern from the following images which is the patient suffering from pneumonia, and which isn't.
 
-![image one](./assets/img/xrays/xray_normal.png)
-
-![image one](./assets/img/xrays/xray_pneumonia.png)
+![image one](./assets/img/xrays/xray_normal.png) ![image one](./assets/img/xrays/xray_pneumonia.png)
 
 **Model Training and Evaluation** 
 
