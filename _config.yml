@@ -16,7 +16,7 @@ timezone:
 
 title: Francisco Carmona # the main title
 
-tagline: Data Scientist # it will display as the sub-title
+tagline: Data Scientist | Cloud Networking # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   FranciscoCarmona, Blog, Github, Machine Learning, Artificial Intelligence, Python
@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/jcarmfran# change to your github homepage
+    - https://github.com/jcarmfran # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/jcarmfran

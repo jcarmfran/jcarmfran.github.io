@@ -1,5 +1,12 @@
-# Leveraging Deep Learning for Pneumonia Detection in Pediatric Chest X-Rays: A Deep Dive
-### This is my personal project
+---
+title: Leveraging Deep Learning for Pneumonia Detection in Chest X-Rays
+date: 2024-04-24 10:31 -0500
+categories: [Deep Learning, Medical Imaging, Project Walkthrough]
+tags: [tensorflow, walkthrough, personal project, medical imaging]
+author: Francisco Carmona
+---
+
+## In this blog, we’ll dive into the entire process of creating a robust pneumonia detection system using deep learning techniques. By the end, we'll have developed and deployed a fully functional web app that can assess whether an uploaded X-ray image shows signs of pneumonia.
 
 **Project Overview**
 
@@ -239,11 +246,27 @@ Relevant resources
     ``` 
     The training process yielded a steady increase in accuracy, peaking at 93.8% on the training set. Validation accuracy also showed promising results, with a high of 94.4%, indicating the model's robustness and potential for real-world application in diagnosing pneumonia. 
 
+Upon comparison, the ResNet50v2 model emerged as the superior performer, exhibiting higher accuracy and precision. 
 
-**Deployment and Implementation** 
+With initial research completed, the next step was to implement our approach into a web application. The goal of the app is provide a user-friendly interface where individuals can upload chest X-ray images and receive an immediate analysis indicating potential signs of pneumonia. 
 
-Upon comparison, the ResNet50v2 model emerged as the superior performer, exhibiting higher accuracy and precision. The decision was made to deploy this model into a web application hosted on Azure. The web app, developed using Flask, offers a user-friendly interface where individuals can upload chest X-ray images and receive an immediate analysis indicating potential signs of pneumonia.
+**Modularization**
 
+In our initial approach, we developed the prototype within a Jupyter notebook, which allowed for an interactive exploration and iterative refinement of our machine learning model. Subsequently, we modularized the codebase to ensure a seamless transition into a fully functional cloud-based web application, catering to scalable, real-world deployment needs.
+
+This moduralization can be reviewed by visiting [this project's Github repository.](https://github.com/jcarmfran/Pneumonia-Detection).
+
+If you would like to dive deeper into the methodology used in moduralizing this project, please email me (Francisco Carmona) at jcarmfran@gmail.com. Additionally, feel free to discuss your  questions 
+
+**Deployment and Trial** 
+
+The application was deployed to AWS as a web app. Github Actions was utilized to help manage our CICD pipeline. Below shows a local launching of the application and user facing interface. For more information on how this process took place, and what steps were required, feel free to reference the projects [README.md](https://github.com/jcarmfran/Pneumonia-Detection/blob/main/README.md) file. 
+
+![app_gui](../assets/img/pneumonia/app_gui.png)
+
+The user can upload an x-ray image and have the application assess whether the patient may be suffering from pneumonia. In our case, we will upload a non-pneumonia x-ray from our dataset to check on the applications prediction power.
+
+![app_gui_predict](../assets/img/pneumonia/app_gui_non-pneu.png)
 
 **Conclusion** 
 
@@ -259,5 +282,10 @@ For those interested in exploring the technical intricacies of the models or rep
 If you’re passionate about advancing healthcare through machine learning, please consider contributing to the [public GitHub repository](https://github.com/jcarmfran/Pneumonia-Detection). I also invite you to share your thoughts and insights in the comment section below.
 
 Whether it’s enhancing the model, improving documentation, or sharing your thoughts, your contributions are very much appreciated!
+
+
+*Edits:
+ - 4/23/24: Added code snippets and expanded conclusion section.
+ - 4/24/24: Added moduralization and application deployment section.
 
 *Disclaimer: The web application is intended for educational purposes and should not replace professional medical advice, diagnosis, or treatment.* 
