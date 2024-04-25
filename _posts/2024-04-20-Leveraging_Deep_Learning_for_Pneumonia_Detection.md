@@ -250,23 +250,27 @@ Upon comparison, the ResNet50v2 model emerged as the superior performer, exhibit
 
 With initial research completed, the next step was to implement our approach into a web application. The goal of the app is provide a user-friendly interface where individuals can upload chest X-ray images and receive an immediate analysis indicating potential signs of pneumonia. 
 
+
 **Modularization**
 
 In our initial approach, we developed the prototype within a Jupyter notebook, which allowed for an interactive exploration and iterative refinement of our machine learning model. Subsequently, we modularized the codebase to ensure a seamless transition into a fully functional cloud-based web application, catering to scalable, real-world deployment needs.
 
 This moduralization can be reviewed by visiting [this project's Github repository.](https://github.com/jcarmfran/Pneumonia-Detection).
 
-If you would like to dive deeper into the methodology used in moduralizing this project, please email me (Francisco Carmona) at jcarmfran@gmail.com. Additionally, feel free to discuss your  questions 
 
 **Deployment and Trial** 
 
-The application was deployed to AWS as a web app. Github Actions was utilized to help manage our CICD pipeline. Below shows a local launching of the application and user facing interface. For more information on how this process took place, and what steps were required, feel free to reference the projects [README.md](https://github.com/jcarmfran/Pneumonia-Detection/blob/main/README.md) file. 
+Utilizing Github Actions to manage our CICD pipeline, the application was deployed to AWS as a web app.  For more information on how this process took place, and what steps were required, feel free to reference the projects [README.md](https://github.com/jcarmfran/Pneumonia-Detection/blob/main/README.md) file.
+
+Below shows a local launching of the application and user facing interface.
 
 ![app_gui](../assets/img/pneumonia/app_gui.png)
 
 The user can upload an x-ray image and have the application assess whether the patient may be suffering from pneumonia. In our case, we will upload a non-pneumonia x-ray from our dataset to check on the applications prediction power.
 
 ![app_gui_predict](../assets/img/pneumonia/app_gui_non-pneu.png)
+
+As we can see above, the application was able to correctly assess that the patient was not affected by pneumonia. Our application is working as expected.
 
 **Conclusion** 
 
@@ -286,6 +290,7 @@ Whether it’s enhancing the model, improving documentation, or sharing your tho
 
 *Edits:
  - 4/23/24: Added code snippets and expanded conclusion section.
- - 4/24/24: Added moduralization and application deployment section.
+ - 4/24/24: Added modular code and application deployment section.
+ - 4/25/24: Corrected typos in **Moduralization** section.
 
 *Disclaimer: The web application is intended for educational purposes and should not replace professional medical advice, diagnosis, or treatment.* 
