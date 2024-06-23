@@ -1,6 +1,6 @@
 ---
 title: Understanding Terraform Code for AWS Deployment
-date: 2024-06-01 12:00 -0500
+date: 2024-06-23 12:00 -0500
 categories: [AWS, Terraform, IaC, Scaling]
 tags: [aws, terraform]
 author: Francisco Carmona
