@@ -1,6 +1,7 @@
 ---
 title: Understanding Terraform Code for AWS Deployment
-date: 2024-06-23 12:00 -0500
+date: 2024-06-01 12:00 -0500
+description: Breaking down a Terraform script and use it to deploy resources in AWS.  
 categories: [AWS, Terraform, IaC, Scaling]
 tags: [aws, terraform]
 author: Francisco Carmona
@@ -124,13 +125,12 @@ Let's see the work done via the AWS console.
 Navigating down to "Load Balancer" on the left hand side of the EC2 page, the Load Balancer instance should be appear on the right hand side. Simply clicking to the checkbox to its immediate left should bring up the Load Balancer's details.
 
 ![load_balancer_details_page](..\assets\img\terraform\AWS_Load_Balancer_Details.png)
-Things to note from the page:
-* Scheme: Internet Facing
-* Load Balancer Frontend URL: Copy+Paste into your browser
+_The Details page of our Load Balancer. Notice the Scheme "Internet-facing" and the frontend URL under "DNS name"._
 
 Copying and pasting the URL into the address bar of your preferred browser will lead you to a  page similar to the one below. 
 
 ![load_balancer_details_page](..\assets\img\terraform\Apache_Tomcat_Homepage.png)
+_Frontend URL of the Load Balancer leads us to our VM's homepage._
 
 Notice that our forgoing of implementing HTTPS results in our page being marked as "Not secure".
 
