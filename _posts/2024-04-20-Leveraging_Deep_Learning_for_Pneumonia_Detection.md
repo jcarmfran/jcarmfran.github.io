@@ -3,7 +3,7 @@ title: Leveraging Deep Learning for Pneumonia Detection in Chest X-Rays
 date: 2024-04-24 10:31 -0500
 categories: [Deep Learning, Medical Imaging, Project Walkthrough]
 tags: [tensorflow, walkthrough, personal project, medical imaging]
-image: ../assets/img/pneumonia/app_gui_non-pneu.png
+image: ../assets/img/pneumonia/app_gui_non-pneu-preview.png
 author: Francisco Carmona
 ---
 
