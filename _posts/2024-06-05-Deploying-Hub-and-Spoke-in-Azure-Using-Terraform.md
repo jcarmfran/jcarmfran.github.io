@@ -1,6 +1,6 @@
 ---
 title: Deploying a Hub-and-Spoke in Azure Using Terraform
-date: 2024-06-01 12:00 -0500
+date: 2024-06-05 12:00 -0500
 description: Breaking down a Terraform script and using it to deploy a Load Balancer and Apache server in AWS. 
 categories: [Azure, Terraform, IaC, Networking]
 tags: [azure, terraform, iac, networks, automation]
