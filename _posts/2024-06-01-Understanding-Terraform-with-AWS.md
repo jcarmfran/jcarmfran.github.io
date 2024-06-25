@@ -120,6 +120,33 @@ module "blog_sg" {
 ```
 The final block of code sets up a security group for our application. This security group allows incoming traffic on ports 80 (HTTP) and 443 (HTTPS) from any IP address (0.0.0.0/0). It also allows all outgoing traffic.
 
+The final implementation of the main.tf:
+```hcl
+resource "aws_vpc" "dev" {
+  cidr_block  = var.vpc_cidr
+
+  tags = {
+    Name = var.vpc_name
+  }
+
+}
+
+resource "aws_subnet" "dev" {
+  count       = length(var.subnets)
+  vpc_id      = aws_vpc.dev.id
+
+  cidr_block  = cidrsubnet(aws_vpc.dev.cidr_block, 4, count.index + 1)
+
+  tags = {
+    Name = var.subnets[count.index]
+  }
+
+}
+
+
+```
+
+
 Let's see the work done via the AWS console.
 
 Navigating down to "Load Balancer" on the left hand side of the EC2 page, the Load Balancer instance should be appear on the right hand side. Simply clicking to the checkbox to its immediate left should bring up the Load Balancer's details.
